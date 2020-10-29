@@ -1,6 +1,38 @@
-
+h1 {
+  font-size: 45px;
+  color: brown;
+  width: 400px;
+  margin: auto;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+}
 
 body {
-    background-color: lightseagreen;
-    
+  background-color: lightskyblue;
+  font-family: "Swanky and Moo Moo", cursive;
+}
+.choice {
+  display: flex;
+  justify-content: center;
+}
+.choices {
+  cursor: pointer;
+}
+.choices.hover {
+  transform: scale(1.1);
+}
+.results {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.scores {
+  margin-left: 0.1rem;
+  font-size: 50px, bold;
+  color: brown;
 }
