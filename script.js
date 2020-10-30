@@ -1,18 +1,25 @@
 //console.log("script was loaded!");
 //document.addEventListener("click", function (e) {
-//console.log(e);
+// console.log(e);
 //});
 
-const selectionItem = document.querySelectorAll("rock", "paper", "scissors");
-console.log(selectionItem);
+const rock = document.getElementById("rock");
+//console.log(rock);
+rock.addEventListener("click", function () {
+  //console.log("clicked");
+});
 
-//   selectionItem.addEventListener("click", function () {
-//   console.log("clicked!!!");
-//  });
+const paper = document.getElementById("paper");
+//console.log(paper);
+paper.addEventListener("click", function () {
+  //console.log("clicked");
+});
 
-//const selectionItem = document.getElementById("paper");
-//console.log(selectionItem);
+const scissors = document.getElementById("scissors");
+//console.log(scissors);
+scissors.addEventListener("click", function () {
+  //console.log("clicked");
+});
 
-//selectionItem.addEventListener("click", function () {
-//console.log("clicked!!!");
-//});
+const myButton = document.getElementById("playButton");
+//console.log(myButton);
