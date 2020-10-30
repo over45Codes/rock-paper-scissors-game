@@ -2,7 +2,8 @@ h1 {
   font-size: 45px;
   color: brown;
   width: 400px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 25px;
   justify-content: center;
   align-items: center;
@@ -12,20 +13,38 @@ body {
   background-color: lightskyblue;
   font-family: "Swanky and Moo Moo", cursive;
 }
-.choice {
+
+.selection-choice {
+  padding: 25px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.selections {
+  flex-direction: row;
   display: flex;
   justify-content: center;
-}
-.choices {
   cursor: pointer;
 }
-.choices.hover {
-  transform: scale(1.1);
+.selection-choice:hover {
+  transform: scale(1.2);
+}
+
+button {
+  height: 60px;
+  width: 100px;
+  border: 5px solid red;
+  background-color: lightpink;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(0.9);
+  background-color: red;
+  cursor: pointer;
 }
 .results {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
   font-size: 40px;
@@ -35,4 +54,6 @@ body {
   margin-left: 0.1rem;
   font-size: 50px, bold;
   color: brown;
+  margin-left: auto;
+  margin-right: auto;
 }
