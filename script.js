@@ -20,6 +20,3 @@ const scissors = document.getElementById("scissors");
 scissors.addEventListener("click", function () {
   //console.log("clicked");
 });
-
-const myButton = document.getElementById("playButton");
-//console.log(myButton);
