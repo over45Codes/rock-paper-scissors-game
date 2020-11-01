@@ -1,11 +1,17 @@
+const playerScore = 0;
+const computerScore = 0;
+const playerScores_span = document.getElementById("player-score");
+const computerScore_span = document.getElementById("computer-score");
+const scoreResults = document.querySelector(".results");
+
+function game(userChoice) {
+  console.log(" player choose   " + userChoice);
+}
 function getPlayerChoice() {
   const rock = document.getElementById("rock");
   rock.addEventListener("click", function () {
-    const result = "rock";
-    //replace the console.log with -  Create a variable that returns a text in the browser
-    console.log("You chose ", result);
+    game("rock");
     showResults("rock");
-    getComputerChoice();
   });
 
   const paper = document.getElementById("paper");
@@ -24,6 +30,10 @@ function getComputerChoice() {
   return computerChose;
 }
 
+//function win() {
+//console.log("WIN");
+//}
+
 getPlayerChoice();
 
 function showResults(userChoice) {
@@ -33,6 +43,19 @@ function showResults(userChoice) {
     case "rockscissors":
     case "scissorspaper":
     case "paperrock":
-      console.log("You win");
+      win();
+      //console.log("You win");
+      break;
+    case "rockpaper":
+    case "paperscissors":
+    case "scissorsrock":
+      lose();
+      //console.log("You loose");
+      break;
+    case "rockrock":
+    case "paperpaper":
+    case "scissorsscissors":
+      draw();
+    //console.log("It's a draw.");
   }
 }
