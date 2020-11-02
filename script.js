@@ -1,15 +1,14 @@
-let playerScore = 0;
-let computerScore = 0;
-let playerScore_span = document.getElementById("player-score");
-let computerScore_span = document.getElementById("computer-score");
-const results_div = document.querySelector(".results");
-const playerChoices = document.getElementById("selections");
+let playerScore = document.getElementById("player-scores");
+let computerScore = document.getElementById("computer-scores");
+const displayResults = document.querySelector(".results");
+const playerChoices = document.getElementById("selection-choice");
 
 function getPlayerChoice() {
   const rock = document.getElementById("rock");
   rock.addEventListener("click", function () {
     //stuck/
     showResults("rock");
+    playerChoices.textContent = "Player picked rock";
   });
 }
 const paper = document.getElementById("paper");
