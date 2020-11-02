@@ -3,14 +3,12 @@ let computerScore = 0;
 let playerScore_span = document.getElementById("player-score");
 let computerScore_span = document.getElementById("computer-score");
 const results_div = document.querySelector(".results");
+const playerChoices = document.getElementById("selections");
 
 function getPlayerChoice() {
   const rock = document.getElementById("rock");
   rock.addEventListener("click", function () {
-    //stuck//
-    let playerChoice = document.getElementById("selections").textContent;
-    selections.textContent("rock");
-    console.log("player chose rock ", playerChoice);
+    //stuck/
     showResults("rock");
   });
 }
