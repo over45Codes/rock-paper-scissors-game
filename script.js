@@ -1,25 +1,24 @@
-const playerScore = 0;
-const computerScore = 0;
-const playerScores_span = document.getElementById("player-score");
-const computerScore_span = document.getElementById("computer-score");
-const scoreResults = document.querySelector(".results");
+let playerScore = 0;
+let computerScore = 0;
+let playerScore_span = document.getElementById("player-score");
+let computerScore_span = document.getElementById("computer-score");
+const results_div = document.querySelector(".results");
 
-function game(userChoice) {
-  console.log(" player choose   " + userChoice);
-}
 function getPlayerChoice() {
   const rock = document.getElementById("rock");
   rock.addEventListener("click", function () {
-    game("rock");
+    //stuck//
+    let playerChoice = document.getElementById("selections").textContent;
+    selections.textContent("rock");
+    console.log("player chose rock ", playerChoice);
     showResults("rock");
   });
-
-  const paper = document.getElementById("paper");
-  paper.addEventListener("click", function () {});
-
-  const scissors = document.getElementById("scissors");
-  scissors.addEventListener("click", function () {});
 }
+const paper = document.getElementById("paper");
+paper.addEventListener("click", function () {});
+
+const scissors = document.getElementById("scissors");
+scissors.addEventListener("click", function () {});
 
 function getComputerChoice() {
   const getComputerChoiceArray = ["rock", "paper", "scissors"];
@@ -30,32 +29,31 @@ function getComputerChoice() {
   return computerChose;
 }
 
-//function win() {
-//console.log("WIN");
-//}
-
 getPlayerChoice();
+
+function win() {
+  //console.log("You win !!");
+}
 
 function showResults(userChoice) {
   const computerChoice = getComputerChoice();
-
   switch (userChoice + computerChoice) {
     case "rockscissors":
     case "scissorspaper":
     case "paperrock":
       win();
-      //console.log("You win");
+      console.log("You win");
       break;
     case "rockpaper":
     case "paperscissors":
     case "scissorsrock":
-      lose();
+      //lose();
       //console.log("You loose");
       break;
     case "rockrock":
     case "paperpaper":
     case "scissorsscissors":
-      draw();
+    //draw();
     //console.log("It's a draw.");
   }
 }
