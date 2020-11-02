@@ -6,7 +6,6 @@ const playerChoices = document.getElementById("selection-choice");
 function getPlayerChoice() {
   const rock = document.getElementById("rock");
   rock.addEventListener("click", function () {
-    //stuck/
     showResults("rock");
     playerChoices.textContent = "Player picked rock";
   });
@@ -29,7 +28,7 @@ function getComputerChoice() {
 getPlayerChoice();
 
 function win() {
-  //console.log("You win !!");
+  console.log("You win !!");
 }
 
 function showResults(userChoice) {
