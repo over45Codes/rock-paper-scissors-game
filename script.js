@@ -11,10 +11,16 @@ function getPlayerChoice() {
   });
 }
 const paper = document.getElementById("paper");
-paper.addEventListener("click", function () {});
+paper.addEventListener("click", function () {
+  showResults("paper");
+  playerChoices.textContent = "Player picked paper";
+});
 
 const scissors = document.getElementById("scissors");
-scissors.addEventListener("click", function () {});
+scissors.addEventListener("click", function () {
+  showResults("scissors");
+  playerChoices.textContent = "Player picked scissors";
+});
 
 function getComputerChoice() {
   const getComputerChoiceArray = ["rock", "paper", "scissors"];
@@ -29,7 +35,7 @@ getPlayerChoice();
 
 function win(userChoice, computerChoice) {
   const winner = (displayResults.textContent =
-    "Player chose" +
+    " Player chose " +
     userChoice +
     ". Computer chose " +
     computerChoice +
@@ -37,6 +43,28 @@ function win(userChoice, computerChoice) {
 
   return winner;
   //console.log("You win !!");
+}
+
+function lose(userChoice, computerChoice) {
+  const loser = (displayResults.textContent =
+    " Player chose " +
+    userChoice +
+    ". Computer chose " +
+    computerChoice +
+    ". You lose! ");
+
+  return loser;
+}
+
+function tie(userChoice, computerChoice) {
+  const tied = (displayResults.textContent =
+    " Player chose " +
+    userChoice +
+    ". Computer chose " +
+    computerChoice +
+    ". It's a tie ! ");
+
+  return tied;
 }
 
 function showResults(userChoice) {
@@ -51,14 +79,14 @@ function showResults(userChoice) {
     case "rockpaper":
     case "paperscissors":
     case "scissorsrock":
-      //lose();
-      //console.log("You loose");
+      lose(userChoice, computerChoice);
+      console.log("You lose");
       break;
     case "rockrock":
     case "paperpaper":
     case "scissorsscissors":
+      tie(userChoice, computerChoice);
+      console.log("It's a tie.");
       break;
-    //draw();
-    //console.log("It's a draw.");
   }
 }
