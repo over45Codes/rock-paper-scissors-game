@@ -1,7 +1,9 @@
-let playerScore = document.getElementById("player-scores");
-let computerScore = document.getElementById("computer-scores");
-const displayResults = document.querySelector(".displayResults");
+let playerScore = 0;
+let computerScore = 0;
+
 const playerChoices = document.querySelectorAll("selection-choice");
+
+const displayResults = document.querySelector(".displayResults");
 
 function getPlayerChoice() {
   const rock = document.getElementById("rock");
@@ -34,6 +36,9 @@ function getComputerChoice() {
 getPlayerChoice();
 
 function win(userChoice, computerChoice) {
+  const updatePlayerScore = document.getElementById("playerScore");
+  playerScore++;
+  updatePlayerScore.textContent = playerScore;
   const winner = (displayResults.textContent =
     " Player chose " +
     userChoice +
@@ -46,6 +51,9 @@ function win(userChoice, computerChoice) {
 }
 
 function lose(userChoice, computerChoice) {
+  const updateComputerScore = document.getElementById("computerScore");
+  computerScore++;
+  updateComputerScore.textContent = computerScore;
   const loser = (displayResults.textContent =
     " Player chose " +
     userChoice +
