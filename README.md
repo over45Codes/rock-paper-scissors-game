@@ -1,7 +1,7 @@
 # Vanilla JavaScript Rock Paper Scissors App Game
 
 Rock-Paper-Scissors application built in JavaScript, HTML and CSS
-Try it [here!]
+Try it [here!](https://gracii.github.io/rock-paper-scissors-game/)
 
 ![alt text](https://github.com/Gracii/rock-paper-scissors-game/blob/main/images/graces-rock-paper-scissors.png)
 
