@@ -28,8 +28,6 @@ function getComputerChoice() {
   const getComputerChoiceArray = ["rock", "paper", "scissors"];
   const randomizeComputerChoice = Math.floor(Math.random() * 3);
   const computerChose = getComputerChoiceArray[randomizeComputerChoice];
-  //replace the console.log with -  Create a variable that returns a text in the browser
-  console.log("The computer chose ", computerChose);
   return computerChose;
 }
 
@@ -47,7 +45,6 @@ function win(userChoice, computerChoice) {
     ". You win! ");
 
   return winner;
-  //console.log("You win !!");
 }
 
 function lose(userChoice, computerChoice) {
