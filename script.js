@@ -1,7 +1,7 @@
 let playerScore = document.getElementById("player-scores");
 let computerScore = document.getElementById("computer-scores");
-const displayResults = document.querySelector(".results");
-const playerChoices = document.getElementById("selection-choice");
+const displayResults = document.querySelector(".displayResults");
+const playerChoices = document.querySelectorAll("selection-choice");
 
 function getPlayerChoice() {
   const rock = document.getElementById("rock");
@@ -27,8 +27,16 @@ function getComputerChoice() {
 
 getPlayerChoice();
 
-function win() {
-  console.log("You win !!");
+function win(userChoice, computerChoice) {
+  const winner = (displayResults.textContent =
+    "Player chose" +
+    userChoice +
+    ". Computer chose " +
+    computerChoice +
+    ". You win! ");
+
+  return winner;
+  //console.log("You win !!");
 }
 
 function showResults(userChoice) {
@@ -37,7 +45,7 @@ function showResults(userChoice) {
     case "rockscissors":
     case "scissorspaper":
     case "paperrock":
-      win();
+      win(userChoice, computerChoice);
       console.log("You win");
       break;
     case "rockpaper":
@@ -49,6 +57,7 @@ function showResults(userChoice) {
     case "rockrock":
     case "paperpaper":
     case "scissorsscissors":
+      break;
     //draw();
     //console.log("It's a draw.");
   }
