@@ -38,20 +38,30 @@ body {
 }
 
 .displayResults {
-  display: grid;
-  justify-content: center;
   justify-items: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 35px;
   color: blue;
   display: flex;
   justify-content: space-evenly;
   padding: 25px;
 }
 
-.scores {
-  margin-left: 0.1rem;
-  font-size: 0.7rem, bold;
+.container {
+  padding: 0;
+  margin: 0;
+  font-size: 45px;
+}
+
+.player-scores {
+  justify-items: center;
+  font-size: 50px, bold;
+  color: red;
+  margin-left: auto;
+  margin-right: auto;
+}
+.computer-scores {
+  font-size: 50px, bold;
   color: red;
   margin-left: auto;
   margin-right: auto;
