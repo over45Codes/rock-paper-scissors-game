@@ -15,23 +15,26 @@ body {
   background-size: 150px;
   background-color: lightskyblue;
   font-family: "Swanky and Moo Moo", cursive;
-  font-size: 45px;
+  font-size: 50px;
 }
 
 .selection-choice {
   padding: 0;
   margin: 0;
-  display: flex;
+  border-radius: 70%;
   justify-items: center;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: lightcyan;
 }
+
 .selections {
   flex-direction: row;
   display: flex;
   justify-content: space-evenly;
   cursor: pointer;
+  padding: 0px;
 }
+
 .selection-choice:hover {
   transform: scale(1.1);
 }
@@ -39,17 +42,23 @@ body {
 .displayResults {
   justify-items: center;
   align-items: center;
-  font-size: 35px;
+  font-size: 45px;
   color: blue;
   display: flex;
   justify-content: space-evenly;
-  padding: 10px;
+  padding: 5px;
 }
 
+div.container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-right: 80px;
+  margin-left: 80px;
+  padding-bottom: 600px;
+}
 .container {
-  padding: 25px;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 50px;
 }
 
@@ -57,12 +66,13 @@ body {
   justify-items: center;
   font-size: 50px, bold;
   color: red;
-  margin-left: auto;
   margin-right: auto;
+  padding: 5px;
 }
+
 .computer-scores {
   font-size: 50px, bold;
   color: red;
-  margin-left: auto;
-  margin-right: auto;
+  flex-direction: row;
+  margin-right: 40px;
 }
