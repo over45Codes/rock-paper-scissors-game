@@ -11,4 +11,4 @@ This project was a great challenge because, I needed to use arrays, functions, M
 
 ## Author
 
-- Grace Castaneda - Passionate Coder - [Linkedin](https://www.linkedin.com/in/castanedagrace/)
+- Grace Castaneda - Full Stack Developer - [Linkedin](https://www.linkedin.com/in/castanedagrace/)
