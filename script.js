@@ -34,7 +34,7 @@ function getComputerChoice() {
 getPlayerChoice();
 
 function win(userChoice, computerChoice) {
-  const updatePlayerScore = document.getElementById("playerScore");
+  const updatePlayerScore = document.getElementById("player-scores");
   playerScore++;
   updatePlayerScore.textContent = playerScore;
   const winner = (displayResults.textContent =
@@ -48,7 +48,7 @@ function win(userChoice, computerChoice) {
 }
 
 function lose(userChoice, computerChoice) {
-  const updateComputerScore = document.getElementById("computerScore");
+  const updateComputerScore = document.getElementById("computer-scores");
   computerScore++;
   updateComputerScore.textContent = computerScore;
   const loser = (displayResults.textContent =
