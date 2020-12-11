@@ -4,18 +4,23 @@ h1 {
   width: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding: 25px;
   justify-content: center;
   align-items: center;
+}
+h2 {
+  font-size: 45px;
+  text-align: center;
 }
 
 body {
   background-image: url("images/rock-paper-scissors.jpg");
   background-repeat: repeat-x;
   background-size: 150px;
-  background-color: lightskyblue;
+  background-color: aqua;
   font-family: "Swanky and Moo Moo", cursive;
-  font-size: 50px;
+  font-size: 45px;
+  padding: 110px;
+  text-align: center;
 }
 
 p {
@@ -28,7 +33,7 @@ p {
   border-radius: 70%;
   justify-items: center;
   align-items: center;
-  background-color: lightcyan;
+  background-color: lightgray;
 }
 
 .selections {
