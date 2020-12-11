@@ -2,7 +2,7 @@
 
 Rock-Paper-Scissors application game built in JavaScript, HTML and CSS
 
-Try it [here!](https://gracii.github.io/rock-paper-scissors-game/)
+Try it [here!](https://gracii.github.io/Rock-Paper-Scissors-Game/)
 
 ![alt text](https://github.com/Gracii/rock-paper-scissors-game/blob/main/images/r-p-s-game.png)
 
