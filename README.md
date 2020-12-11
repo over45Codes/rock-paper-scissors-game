@@ -4,7 +4,7 @@ Rock-Paper-Scissors application game built in JavaScript, HTML and CSS
 
 Try it [here!](https://gracii.github.io/Rock-Paper-Scissors-Game/)
 
-![alt text](https://github.com/Gracii/rock-paper-scissors-game/blob/main/images/r-p-s-game.png)
+![alt text](https://github.com/Gracii/Rock-Paper-Scissors-Game/blob/main/images/grace-r-p-s-game.png)
 
 ## Summary
 
