@@ -8,7 +8,7 @@ Try it [here!](https://over45Codes.github.io/rock-paper-scissors-game/)
 
 ## Summary
 
-This Rock-Paper-Scissors is a classic game with a very simple rule set in JavaScript, HTML and CSS. This project was a great challenge because, I needed to use arrays, functions, MathRandom functions! Also, I needed to find creative ways to increase the score count in the web browser! It was an a great way to use CSS Styling which included CSS flexbox to layout game elements and got a bit creative with colors and images. I learn how to simplify complex game logic and write clean ES6 code. Last but not least in was a challenge to code the logic that would determine the outcome of all of the different variations that would be the outcome of each game by creating an AI to play against.
+Created with JavaScript, HTML, and CSS, this Rock-Paper-Scissors game follows the classic and straightforward rule set. This project presented a delightful challenge, as it required the use of arrays, functions, and the Math.random() function. It also involved finding innovative ways to track and update the score within the web browser. The CSS styling aspect allowed for the utilization of CSS flexbox to arrange game elements, offering opportunities for creative color and image choices. During this project, I gained experience in simplifying complex game logic and writing clean, modern ES6 code. Last but not least, it was a rewarding challenge to code the logic for determining the outcomes of all possible game variations by creating an AI opponent to play against.
 
 ## Author
 
